@@ -1,0 +1,485 @@
+/* IMPORTAR LETRA */
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+/* LETRA Y BORDER-BOX A EL TODO DOCUMENTO */
+
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+/* VARIABLE DE COLORES */
+
+:root {
+  --rojoBrillante: rgb(242, 95, 58);
+  --azulOscuro: rgb(35, 44, 81);
+  --azulGrisáceoOscuro: rgb(143, 148, 167);
+  --azulMuyOscuro: rgb(29, 30, 37);
+  --rojoMuyPálido: rgb(255, 239, 234);
+  --varianteGrisClaro: rgb(249, 249, 249);
+}
+
+/* ----------------------BODY--------------------------- */
+
+/* SACAR HAMBURGUESA DE HEADER */
+
+.boxnavbar i {
+  display: none;
+}
+
+/* 1ª IMAGEN DE FONDO */
+
+body {
+  background-image: url("../img/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: 62.5rem -12.5rem;
+}
+
+/* 2ª IMAGEN DE FONDO */
+
+main {
+  background-image: url("../img/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: -31.25rem 62.5rem;
+}
+
+/* HEADER FLEX MARGEN Y ALINEACION */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5.69rem 9.12rem 5.69rem 10.31rem;
+}
+
+/* LOGO DIMENSION */
+
+.logo {
+  width: 9rem;
+  height: 1.5rem;
+}
+
+/* LISTADO FLEX DECORACION ALINEACION */
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2.65rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--azulOscuro);
+  font-weight: 500;
+  font-size: 0.81rem;
+}
+
+nav ul li a:active {
+  color: var(--azulGrisáceoOscuro);
+}
+
+/*BOTON COLOR DIENSION BORDE COLOR DE LETRA SIN BORDE Y SOMBRA */
+
+.botonnaranja {
+  background-color: var(--rojoBrillante);
+  width: 8.37em;
+  height: 2.75em;
+  border-radius: 3em;
+  color: var(--varianteGrisClaro);
+  border: none;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+.botonnaranja:active {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+/* 1ª SECCION FLEX Y MARGEN */
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  margin: 5.69rem 9.12rem 5.69rem 10.31rem;
+}
+
+/* TITULO 1ª SECCION 1ª ARTICULO COLOR Y DISEÑO DE LETRA */
+
+h1 {
+  font-weight: 700;
+  font-size: 3.62rem;
+  margin: 0em;
+  letter-spacing: -0.035em;
+  color: var(--azulOscuro);
+}
+
+/* PARRAFO 1ª SECCION 1ª ARTICULO COLOR Y DISEÑO DE LETRA Y MEDIDA DE CAJON */
+
+.home p {
+  font-weight: 500;
+  font-size: 1.03rem;
+  margin: 1.75rem 0px;
+  line-height: 157.1%;
+  color: var(--azulGrisáceoOscuro);
+  width: 23.12rem;
+}
+
+/* CAJON 2ª SECCION FLEX Y MARGENES */
+
+.nosotros {
+  display: flex;
+  justify-content: space-between;
+  margin: 5.69rem 9.12rem 5.69rem 10.31rem;
+}
+
+/* TITULO 2ª SECCION 1ª ARTICULO COLOR Y DISEÑO DE LETRA */
+
+.frasenosotros h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: var(--azulOscuro);
+}
+
+/* PARRAFO 2ª SECCION 1ª ARTICULO COLOR Y DISEÑO DE LETRA  Y MARGEN */
+
+.frasenosotros p {
+  color: var(--azulGrisáceoOscuro);
+  margin-right: 10em;
+}
+
+/* CAJA 2ª SECCION 2ª ARTICULO MARGEN*/
+
+.ventajasnosotros {
+  margin-left: 12rem;
+}
+
+/* CAJA 2ª SECCION 2ª ARTICULO PARA BOTON Y TITULO FLEX Y GAP */
+
+.cajaventajabotonytitulo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* SPAN 2ª SECCION 2ª ARTICULO COLOR DISEÑO REDONDEO COLOR DE LETRA Y DISEÑO DE NUMERO */
+
+.botonnaranjita {
+  background-color: var(--rojoBrillante);
+  width: 4.31rem;
+  height: 2.68rem;
+  border-radius: 1.875rem;
+  color: var(--varianteGrisClaro);
+  padding-top: 0.6rem;
+  text-align: center;
+}
+
+/* TITULO 2ª SECCION 2ª ARTICULO  COLOR LETRA*/
+
+.cajaventajabotonytitulo h3 {
+  color: var(--azulOscuro);
+}
+
+/* PARRAFO 2ª SECCION 2ª ARTICULO ALINEACION Y COLOR DE LETRA*/
+
+.cajaventajaparrafo {
+  padding-left: 6em;
+  color: var(--azulGrisáceoOscuro);
+}
+
+/* CAJON 3ª SECCION MARGENES */
+
+.testimonios {
+  margin: 5.69rem 0rem 5.69rem 0rem;
+}
+
+/* TITULO 3ª SECCION ALINEADO Y COLOR LETRA*/
+.testimonios h2 {
+  text-align: center;
+  margin-bottom: 8rem;
+  color: var(--azulOscuro);
+}
+
+/* CAJA 3ª SECCION DE LAS 3 CARTAS FLEX */
+
+.testimonios div {
+  display: flex;
+}
+
+/* ARTICULO CARTA 3ª SECCION  FLEX COLUM ALINEADO Y COLOR DE FONDO*/
+
+.carta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+/* FOTO 3ª SECCION DISEÑADA Y POSICIONADA */
+
+.cartaimg {
+  width: 4.37rem;
+  height: 4.37rem;
+  position: relative;
+  top: -2.18rem;
+}
+
+/* TITULO 3º SECCION CARTA COLOR LETRA*/
+
+.carta h3 {
+  color: var(--azulOscuro);
+}
+
+/* PARRAFO 3ª SECCION CARTA COLOR LETRA*/
+
+.carta p {
+  color: var(--azulOscuro);
+}
+
+/* BOTON 3ª SECCION CENTRADO*/
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+/* SECCION 4ª SECCION COLOR FONDO FLEX*/
+
+.naranja {
+  background-color: var(--rojoBrillante);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* TITULO 4ª SECCION DISEÑO Y COLOR DE LETRA MARGEN Y DISEÑO*/
+
+.naranja h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--varianteGrisClaro);
+  margin-left: 10rem;
+  width: 30rem;
+}
+
+/* BOTON 4ª SECCION COLOR SOMBRA Y DISEÑO*/
+
+.botonblanco {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  width: 8.37em;
+  height: 2.75em;
+  border-radius: 3rem;
+  color: var(--rojoBrillante);
+  border: none;
+  margin-right: 10rem;
+}
+
+.botonblanco:active {
+  color: rgba(242, 95, 58, 0.5);
+  cursor: pointer;
+}
+
+/* CAJON FOOTER FLEX PADDING COLOR DE FONDO Y DISEÑO*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 4.69rem 9.12rem 4.69rem 10.31rem;
+  background-color: #1e1e26;
+  margin-bottom: 0px;
+  height: 15.43rem;
+}
+
+/* CAJA FOOTER FLEX COLUMNAS */
+
+.footerbox1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.redes a {
+  color: var(--varianteGrisClaro);
+  font-size: 1.3rem;
+}
+
+.redes a:hover {
+  color: var(--rojoBrillante);
+}
+
+/* LISTA FOOTER SACAR ESTILO*/
+
+footer ul {
+  list-style: none;
+}
+
+/* LISTA FOOTER MARGENES*/
+
+footer li {
+  /* margin: 0rem 0rem 0.6rem 0rem; */
+  padding: 0.3rem;
+}
+
+/* ELEMENTO LISTA FOOTER SIN DECORACION COLOR Y DISEÑO DE LETRA*/
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--varianteGrisClaro);
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* INPUT FOOTER CREAR BOTON CON COLOR SIN BORDE*/
+
+input[type="submit"] {
+  background-color: var(--rojoBrillante);
+  width: 3.9rem;
+  height: 2.6rem;
+  border-radius: 1.875rem;
+  color: var(--varianteGrisClaro);
+  border: none;
+}
+
+input[type="submit"]:active {
+  background-color: rgb(244, 125, 96);
+  cursor: pointer;
+}
+
+/* INPUT FOOTER MAIL REDONDEADO*/
+
+input[type="email"] {
+  border-radius: 1.875rem;
+  border: none;
+  padding: 0.6rem;
+}
+
+/* REDES FLEX Y PADDING */
+
+.redes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4.5rem;
+}
+
+footer ul li a:active {
+  color: var(--rojoBrillante);
+}
+
+/* COPYRIGHT COLOR Y PADDING*/
+
+.copy {
+  color: var(--azulGrisáceoOscuro);
+  padding-top: 3rem;
+}
+
+/* --------------Mobile: 375px----------- */
+
+@media (max-width: 400px) {
+  body {
+    background-image: url("../img/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: 7rem -12rem;
+  }
+
+  /* HEADER ARREGLAR MARGENES */
+  header {
+    margin: 5rem 0rem 0rem 3rem;
+  }
+
+  /*HEADER HAMBURGUEZA DISEÑO Y MARGUENES*/
+  .boxnavbar i {
+    display: initial;
+    color: var(--azulOscuro);
+    font-size: 2rem;
+    font-weight: 900;
+    margin-left: 18.5rem;
+  }
+
+  /*HEADER DESAPARECER LISTADO*/
+
+  .boxnavbar li {
+    display: none;
+  }
+
+  /*HEADER DESAPARECER BOTON*/
+
+  .boxnavbar button {
+    display: none;
+  }
+
+  /*HEADER FLEX */
+  
+  .boxnavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+/*MAIN 1ª SECCION FLEX PARA CAMBIAR DISPOSICION*/
+
+  .home {
+    flex-direction: column-reverse;
+    align-content: flex-start;
+    margin: 5rem 0rem 0rem 3rem;
+  }
+}
+
+
+
+
+/* de aca para abajo no se como funciona
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4.69rem;
+    align-items: center;
+    padding: 2rem;
+    gap: 10rem;
+
+}
+
+.estilos-home {
+
+
+  flex-direction: column-reverse;
+
+}
+
+
+
+
+*/
+
+/* FALTAAAAAAAAAAAAAAAAAAAA
+
+- [Font Awesome](https://fontawesome.com)
+
+- SEUDO CLASES Y SEUDO ELEMENTO LISTADO Y BOTON
+
+flex-wrap: wrap
+min-width:
+.estilo-imagen-sub {
+    width:100%;
+    min-width: 290px;
+    display: flex;
+    
+}
+
+## Diseño
+
+Los diseños se crearon con los siguientes anchos:
+
+- Mobile: 375px
+
+- Desktop: 1440px
+
+minwid
+*/
