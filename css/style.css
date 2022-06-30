@@ -7,6 +7,7 @@
 * {
   font-family: "Be Vietnam Pro", sans-serif;
   box-sizing: border-box;
+  border: red solid 1px;
 }
 
 /* VARIABLE DE COLORES */
@@ -115,6 +116,7 @@ h1 {
   letter-spacing: -0.035em;
   color: var(--azulOscuro);
 
+
 }
 
 /* PARRAFO 1ª SECCION 1ª ARTICULO COLOR Y DISEÑO DE LETRA Y MEDIDA DE CAJON */
@@ -127,6 +129,8 @@ h1 {
   color: var(--azulGrisáceoOscuro);
   width: 23.12rem;
 }
+
+
 
 /* CAJON 2ª SECCION FLEX Y MARGENES */
 
@@ -396,16 +400,29 @@ footer ul li a:active {
 @media (max-width: 400px){
 
   /*IMAGEN DE FONDO*/
-  body {
-    background-image: url("../img/bg-tablet-pattern.svg");
-    background-repeat: no-repeat;
-    background-position: 7rem -12rem;
+  
+
+body {
+  margin: 0px;
+  width: 100vw;
+  background-position: 0rem 0rem;
+  background-size:150%;
+  background-position: 2rem -10rem;
   }
+
+  main {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 14rem 27rem; 
+  }
+
+
 
 
   /* HEADER ARREGLAR MARGENES */
   header {
-    margin: 5rem 0rem 0rem 3rem;
+    margin: 2rem 0rem 3rem 3rem;
+    
   }
 
   /*HEADER HAMBURGUEZA DISEÑO Y MARGUENES*/
@@ -414,7 +431,7 @@ footer ul li a:active {
     color: var(--azulOscuro);
     font-size: 2rem;
     font-weight: 900;
-    margin-left: 26rem;
+    
   }
 
   /*HEADER DESAPARECER LISTADO*/
@@ -442,29 +459,35 @@ footer ul li a:active {
   .home {
     flex-direction: column-reverse;
     align-content: flex-start;
-    margin: 5rem -16rem 0rem 6rem;
-  }
+    margin: 0rem 0rem 0rem 0rem;
+    }
 
   /*MAIN 1ª SECCION TITULO ALINER */
 
 h1 {
   text-align: center;
+  font-size: 2.8rem;
 
   }
 
 /* MAIN 1ª SECCION PARRAFO ALINEAR Y DIAGRAMAR*/
 
 .home p{
-  width: 21.12rem;
+ 
   text-align: center;
-  margin-left: 5rem;
+  
   letter-spacing: 0.05rem;
 }
 
 /* MAIN 1ª SECCION PARRAFO BOTON CENTRAR */
 
 .frasehome button{
-  margin-left: 12rem;
+  margin-left: 6.5rem;
+}
+
+/* MAIN 1ª SECCION FOTO DIAGRAMAR*/
+.graficas img{
+  width: 375px;
 }
 
 /* MAIN 2ª SECCION FLEX COLUMNA Y MARGENES */
@@ -479,8 +502,7 @@ h1 {
 
 .frasenosotros h2{
   text-align: center;
-  width: 20rem;
-  margin-left: 11rem;
+  
 }
 
 /* MAIN 2ª SECCION PARRAFO CENTRAR Y DIAGRAMAR */
@@ -488,7 +510,7 @@ h1 {
 .frasenosotros p{
   text-align: center;
   width: 23rem;
-  margin-left: 9.5rem;
+  
   letter-spacing: 0.05rem;
   line-height: 1.5rem;
 }
@@ -497,17 +519,17 @@ h1 {
 
 .ventajasnosotros{
   margin-left:  0px;
-  width: 650px;
+ 
   margin-top: 4rem;
 }
 
 /* MAIN 2ª SECCION TITULO LETRA */
 
 .ventajasnosotros h3{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
-/* MAIN 2 SECCION PARRAFO DISEÑAR Y LETRA*/ 
+/* MAIN 2 SECCION PARRAFO DISEÑAR Y LETRA*/
 
 .cajaventajaparrafo{
   padding-left: 0rem;
@@ -519,8 +541,8 @@ h1 {
 
 .testimonios {
   margin: 0rem 0rem 0rem 0rem;
-  width: 650px;
-  
+
+
 }
 
 /*MAIN 3ª SECCION TITULO*/
@@ -537,9 +559,9 @@ h1 {
 
 /*MAIN 3ª SECCION DIMENSIONAR CARTA*/
 
-.carta1{
-  width: 300px;
-  margin-left: 12rem;
+.testimonios h2{
+  margin-bottom: 6.5rem;
+ 
 }
 
 /*MAIN 4ª SECCION  DIMENSIONAR CAJA Y FLEX COLUMN*/
@@ -547,8 +569,7 @@ h1 {
 .naranja{
   flex-direction: column;
   justify-content: center;
-  width: 650px;
-  height: 300px;
+  
   margin-top: 3.5rem;
 }
 
@@ -570,11 +591,9 @@ h1 {
 
 footer {
   flex-direction: column-reverse;
-  
-  padding: 45rem 37.6rem 10rem 3rem;
-  
-  margin-bottom: 0px;
-  
+padding: 0rem 0rem 0rem 0rem;
+height: auto;
+margin-bottom: 0px;
 }
 
 
