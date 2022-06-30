@@ -578,13 +578,14 @@ h1 {
   width: 300px;
   text-align: center;
   margin-left: 0rem;
+  margin-top: 5rem;
 }
 
 /* MAIN 4ª SECCION BOTON DIMENSIONAR*/
 
 .botonblanco{
   margin-right: 0rem;
-  bottom: 13rem;
+  margin-bottom: 3rem;
 }
 
 /* FOOTER DIMENSIONAR Y SACAR LOGO*/
@@ -596,6 +597,30 @@ height: auto;
 margin-bottom: 0px;
 }
 
+/*FOOTER MAIL ALINEAR Y FLEX*/
+.formulariofooter form{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 4rem 0rem 4rem;
+}
+
+/*FOOTER LOGO ALINEAR*/
+
+.logofooter{
+  text-align: center;
+}
+
+/* FOOTER REDES ALINEAR FLEX*/
+.redes{
+  justify-content: space-around;
+  
+}
+
+/*FOOTER AGRANDAR ICONOS*/
+
+.redes a{
+  font-size: 1.5rem;
+}
 
 
 }
