@@ -7,7 +7,7 @@
 * {
   font-family: "Be Vietnam Pro", sans-serif;
   box-sizing: border-box;
-  border: red solid 1px;
+ 
 }
 
 /* VARIABLE DE COLORES */
@@ -89,6 +89,7 @@ nav ul li a:active {
   width: 8.37rem;
   height: 2.75rem;
   border-radius: 3rem;
+  font-weight: 600;
   color: var(--varianteGrisClaro);
   border: none;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
@@ -264,8 +265,8 @@ h1 {
 
 .naranja {
   background-image: url("../img/bg-simplify-section-desktop.svg");
-    background-position: 120% 70%;
-    background-repeat: no-repeat;
+  background-position: 120% 70%;
+  background-repeat: no-repeat;
 
   background-color: var(--rojoBrillante);
   display: flex;
@@ -294,6 +295,7 @@ h1 {
   color: var(--rojoBrillante);
   border: none;
   margin-right: 10rem;
+  font-weight: 600;
 }
 
 .botonblanco:active {
@@ -360,6 +362,7 @@ input[type="submit"] {
   border-radius: 1.875rem;
   color: var(--varianteGrisClaro);
   border: none;
+  font-weight: 600;
 }
 
 input[type="submit"]:active {
@@ -397,23 +400,23 @@ footer ul li a:active {
 
 /* --------------Mobile: 375px----------- */
 
-@media (max-width: 400px){
+@media (max-width: 450px) {
 
   /*IMAGEN DE FONDO*/
-  
 
-body {
-  margin: 0px;
-  width: 100vw;
-  background-position: 0rem 0rem;
-  background-size:150%;
-  background-position: 2rem -10rem;
+
+  body {
+    margin: 0px;
+    /* width: 100vw; */
+    background-position: 0rem 0rem;
+    background-size: 150%;
+    background-position: 2rem -10rem;
   }
 
   main {
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: 14rem 27rem; 
+    background-position: 14rem 27rem;
   }
 
 
@@ -422,7 +425,7 @@ body {
   /* HEADER ARREGLAR MARGENES */
   header {
     margin: 2rem 0rem 3rem 3rem;
-    
+
   }
 
   /*HEADER HAMBURGUEZA DISEÑO Y MARGUENES*/
@@ -431,7 +434,7 @@ body {
     color: var(--azulOscuro);
     font-size: 2rem;
     font-weight: 900;
-    
+
   }
 
   /*HEADER DESAPARECER LISTADO*/
@@ -454,173 +457,220 @@ body {
     align-items: center;
   }
 
-/*MAIN 1ª SECCION FLEX COLUMNAS PARA CAMBIAR DISPOSICION*/
+  /*MAIN 1ª SECCION FLEX COLUMNAS PARA CAMBIAR DISPOSICION*/
 
   .home {
     flex-direction: column-reverse;
     align-content: flex-start;
     margin: 0rem 0rem 0rem 0rem;
-    }
+  }
 
   /*MAIN 1ª SECCION TITULO ALINER */
 
-h1 {
-  text-align: center;
-  font-size: 2.8rem;
+  h1 {
+    text-align: center;
+    font-size: 2.8rem;
 
   }
 
-/* MAIN 1ª SECCION PARRAFO ALINEAR Y DIAGRAMAR*/
+  /* MAIN 1ª SECCION PARRAFO ALINEAR Y DIAGRAMAR*/
 
-.home p{
- 
-  text-align: center;
+  .home p {
+
+    text-align: center;
+
+    letter-spacing: 0.05rem;
+  }
+
+  /* MAIN 1ª SECCION PARRAFO BOTON CENTRAR */
+
+  .frasehome button {
+    margin-left: 6.5rem;
+  }
+
+  /* MAIN 1ª SECCION FOTO DIAGRAMAR*/
+  .graficas img {
+    width: 375px;
+  }
+
+  /* MAIN 2ª SECCION FLEX COLUMNA Y MARGENES */
+
+  .nosotros {
+    margin: 0px;
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+
+  /* MAIN 2ª SECCION TITULO CENTRAR Y DIAGRAMAR */
+
+  .frasenosotros h2 {
+    text-align: center;
+
+  }
+
+  /* MAIN 2ª SECCION PARRAFO CENTRAR Y DIAGRAMAR */
+
+  .frasenosotros p {
+    text-align: center;
+    width: 23rem;
+
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem;
+  }
+
+  /* MAIN 2ª SECCION CAJA SACAR MARGEN Y ALINEAR */
+
+  .ventajasnosotros {
+    margin-left: 0px;
+
+    margin-top: 4rem;
+  }
+
+  /* MAIN 2ª SECCION TITULO LETRA */
+
+  .ventajasnosotros h3 {
+    font-size: 1rem;
+    
+  }
+
+  /*MAIN 2ª SECCION FRANJA ROSADA*/
+  .cajaventajabotonytitulo{
+    background-color: rgba(242, 95, 58,0.2);
+    height: 8vh;
+}
+
+  /* MAIN 2 SECCION PARRAFO DISEÑAR Y LETRA*/
+
+  .cajaventajaparrafo {
+    padding-left: 0rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem;
+  }
+
+  /*MAIN 3ª SECCION CAJA DISEÑAR*/
+
+  .testimonios {
+    margin: 0rem 0rem 0rem 0rem;
+
+
+  }
+
+  /*MAIN 3ª SECCION TITULO*/
+
+  .testimonios h2 {
+    text-align: center;
+  }
+
+  /*MAIN 3ª SECCION OCULTAR CARTAS*/
+
+  .carta {
+    display: none;
+  }
+
+  /*MAIN 3ª SECCION DIMENSIONAR CARTA*/
+
+  .testimonios h2 {
+    margin-bottom: 6.5rem;
+
+  }
+
   
-  letter-spacing: 0.05rem;
-}
-
-/* MAIN 1ª SECCION PARRAFO BOTON CENTRAR */
-
-.frasehome button{
-  margin-left: 6.5rem;
-}
-
-/* MAIN 1ª SECCION FOTO DIAGRAMAR*/
-.graficas img{
-  width: 375px;
-}
-
-/* MAIN 2ª SECCION FLEX COLUMNA Y MARGENES */
-
-.nosotros{
-  margin: 0px;
-  margin-top: 3rem;
-  flex-direction: column;
-}
-
-/* MAIN 2ª SECCION TITULO CENTRAR Y DIAGRAMAR */
-
-.frasenosotros h2{
-  text-align: center;
-  
-}
-
-/* MAIN 2ª SECCION PARRAFO CENTRAR Y DIAGRAMAR */
-
-.frasenosotros p{
-  text-align: center;
-  width: 23rem;
-  
-  letter-spacing: 0.05rem;
-  line-height: 1.5rem;
-}
-
-/* MAIN 2ª SECCION CAJA SACAR MARGEN Y ALINEAR */
-
-.ventajasnosotros{
-  margin-left:  0px;
- 
-  margin-top: 4rem;
-}
-
-/* MAIN 2ª SECCION TITULO LETRA */
-
-.ventajasnosotros h3{
-  font-size: 1rem;
-}
-
-/* MAIN 2 SECCION PARRAFO DISEÑAR Y LETRA*/
-
-.cajaventajaparrafo{
-  padding-left: 0rem;
-  letter-spacing: 0.05rem;
-  line-height: 1.5rem;
-}
-
-/*MAIN 3ª SECCION CAJA DISEÑAR*/
-
-.testimonios {
-  margin: 0rem 0rem 0rem 0rem;
 
 
-}
+  /*MAIN 4ª SECCION  DIMENSIONAR CAJA Y FLEX COLUMN*/
 
-/*MAIN 3ª SECCION TITULO*/
+  .naranja {
+    flex-direction: column;
+    justify-content: center;
+    height: 25rem;
 
-.testimonios h2{
-  text-align: center;
-}
+    margin-top: 3.5rem;
+  }
 
-/*MAIN 3ª SECCION OCULTAR CARTAS*/
+  /* MAIN 4ª SECCION TITULO DIMENSIONAR Y ALINEAR*/
+  .naranja h2 {
+    width: 300px;
+    text-align: center;
+    margin-left: 0rem;
+    margin-top: 5rem;
+    font-size: 2.2rem;
+  }
 
-.carta{
-  display: none;
-}
+  /* MAIN 4ª SECCION BOTON DIMENSIONAR*/
 
-/*MAIN 3ª SECCION DIMENSIONAR CARTA*/
+  .botonblanco {
+    margin-right: 0rem;
+    margin-bottom: 3rem;
+  }
 
-.testimonios h2{
-  margin-bottom: 6.5rem;
- 
-}
+  /* FOOTER DIMENSIONAR Y SACAR LOGO*/
 
-/*MAIN 4ª SECCION  DIMENSIONAR CAJA Y FLEX COLUMN*/
+  footer {
+    flex-direction: column-reverse;
+    padding: 0rem 0rem 0rem 0rem;
+    height: 32rem;
+    margin-bottom: 0px;
+  }
 
-.naranja{
-  flex-direction: column;
-  justify-content: center;
-  
-  margin-top: 3.5rem;
-}
+  /*FOOTER MAIL ALINEAR Y FLEX*/
+  .formulariofooter form {
+    display: flex;
+    justify-content: space-between;
+    margin: -4rem 4rem 0rem 3.5rem;
+    position: relative;
+    top: 7rem;
+  }
 
-/* MAIN 4ª SECCION TITULO DIMENSIONAR Y ALINEAR*/
-.naranja h2{
-  width: 300px;
-  text-align: center;
-  margin-left: 0rem;
-  margin-top: 5rem;
-}
+  /*FOOTER LOGO ALINEAR*/
 
-/* MAIN 4ª SECCION BOTON DIMENSIONAR*/
+  .logofooter {
+    text-align: center;
+    position: relative;
+    top: 1rem;
+  }
 
-.botonblanco{
-  margin-right: 0rem;
-  margin-bottom: 3rem;
-}
+  /* FOOTER REDES ALINEAR FLEX*/
+  .redes {
+    justify-content: space-around;
+    position: relative;
+    bottom: 11rem;
 
-/* FOOTER DIMENSIONAR Y SACAR LOGO*/
+  }
 
-footer {
-  flex-direction: column-reverse;
-padding: 0rem 0rem 0rem 0rem;
-height: auto;
-margin-bottom: 0px;
-}
+  /*FOOTER AGRANDAR ICONOS*/
 
-/*FOOTER MAIL ALINEAR Y FLEX*/
-.formulariofooter form{
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem 4rem 0rem 4rem;
-}
+  .redes a {
+    font-size: 1.5rem;
 
-/*FOOTER LOGO ALINEAR*/
+  }
 
-.logofooter{
-  text-align: center;
-}
+  /*FOOTER COPYRIGHT ALINEAR Y CENTRAR*/
+  .copy {
+    text-align: center;
+    position: relative;
+    top: 26rem;
+    
+  }
 
-/* FOOTER REDES ALINEAR FLEX*/
-.redes{
-  justify-content: space-around;
-  
-}
+  /*FOOTER 1ºLISTADO ALINEAR */
 
-/*FOOTER AGRANDAR ICONOS*/
+  .primerlistado{
+    position: relative;
+    bottom: 6rem;
 
-.redes a{
-  font-size: 1.5rem;
-}
+
+  }
+
+  /*FOOTER 2ºLISTADO ALINEAR */
+
+  .segundolistado{
+    position: relative;
+    bottom: -2.5rem;
+    left: 10rem;
+    width: 11rem;
+
+
+  }
 
 
 }
