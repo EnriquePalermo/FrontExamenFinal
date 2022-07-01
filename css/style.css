@@ -7,7 +7,6 @@
 * {
   font-family: "Be Vietnam Pro", sans-serif;
   box-sizing: border-box;
- 
 }
 
 /* VARIABLE DE COLORES */
@@ -116,8 +115,6 @@ h1 {
   margin: 0em;
   letter-spacing: -0.035em;
   color: var(--azulOscuro);
-
-
 }
 
 /* PARRAFO 1ª SECCION 1ª ARTICULO COLOR Y DISEÑO DE LETRA Y MEDIDA DE CAJON */
@@ -130,8 +127,6 @@ h1 {
   color: var(--azulGrisáceoOscuro);
   width: 23.12rem;
 }
-
-
 
 /* CAJON 2ª SECCION FLEX Y MARGENES */
 
@@ -267,7 +262,6 @@ h1 {
   background-image: url("../img/bg-simplify-section-desktop.svg");
   background-position: 120% 70%;
   background-repeat: no-repeat;
-
   background-color: var(--rojoBrillante);
   display: flex;
   align-items: center;
@@ -340,7 +334,6 @@ footer ul {
 /* LISTA FOOTER MARGENES*/
 
 footer li {
-  /* margin: 0rem 0rem 0.6rem 0rem; */
   padding: 0.3rem;
 }
 
@@ -407,7 +400,6 @@ footer ul li a:active {
 
   body {
     margin: 0px;
-    /* width: 100vw; */
     background-position: 0rem 0rem;
     background-size: 150%;
     background-position: 2rem -10rem;
@@ -418,9 +410,6 @@ footer ul li a:active {
     background-repeat: no-repeat;
     background-position: 14rem 27rem;
   }
-
-
-
 
   /* HEADER ARREGLAR MARGENES */
   header {
@@ -470,15 +459,12 @@ footer ul li a:active {
   h1 {
     text-align: center;
     font-size: 2.8rem;
-
   }
 
   /* MAIN 1ª SECCION PARRAFO ALINEAR Y DIAGRAMAR*/
 
   .home p {
-
     text-align: center;
-
     letter-spacing: 0.05rem;
   }
 
@@ -505,7 +491,6 @@ footer ul li a:active {
 
   .frasenosotros h2 {
     text-align: center;
-
   }
 
   /* MAIN 2ª SECCION PARRAFO CENTRAR Y DIAGRAMAR */
@@ -522,7 +507,6 @@ footer ul li a:active {
 
   .ventajasnosotros {
     margin-left: 0px;
-
     margin-top: 4rem;
   }
 
@@ -551,8 +535,6 @@ footer ul li a:active {
 
   .testimonios {
     margin: 0rem 0rem 0rem 0rem;
-
-
   }
 
   /*MAIN 3ª SECCION TITULO*/
@@ -571,10 +553,7 @@ footer ul li a:active {
 
   .testimonios h2 {
     margin-bottom: 6.5rem;
-
   }
-
-  
 
 
   /*MAIN 4ª SECCION  DIMENSIONAR CAJA Y FLEX COLUMN*/
@@ -583,7 +562,6 @@ footer ul li a:active {
     flex-direction: column;
     justify-content: center;
     height: 25rem;
-
     margin-top: 3.5rem;
   }
 
@@ -634,14 +612,12 @@ footer ul li a:active {
     justify-content: space-around;
     position: relative;
     bottom: 11rem;
-
   }
 
   /*FOOTER AGRANDAR ICONOS*/
 
   .redes a {
     font-size: 1.5rem;
-
   }
 
   /*FOOTER COPYRIGHT ALINEAR Y CENTRAR*/
@@ -649,7 +625,6 @@ footer ul li a:active {
     text-align: center;
     position: relative;
     top: 26rem;
-    
   }
 
   /*FOOTER 1ºLISTADO ALINEAR */
@@ -657,8 +632,6 @@ footer ul li a:active {
   .primerlistado{
     position: relative;
     bottom: 6rem;
-
-
   }
 
   /*FOOTER 2ºLISTADO ALINEAR */
@@ -668,73 +641,7 @@ footer ul li a:active {
     bottom: -2.5rem;
     left: 10rem;
     width: 11rem;
-
-
   }
 
 
 }
-
-
-
-
-/* de aca para abajo no se como funciona
-
-
-
-.boton2:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
-    background-color: #f04116;
-}
-
-
-
-
-header {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 4.69rem;
-    align-items: center;
-    padding: 2rem;
-    gap: 10rem;
-
-}
-
-.estilos-home {
-
-
-  flex-direction: column-reverse;
-
-}
-
-
-
-
-*/
-
-/* FALTAAAAAAAAAAAAAAAAAAAA
-
-- [Font Awesome](https://fontawesome.com)
-
-- SEUDO CLASES Y SEUDO ELEMENTO LISTADO Y BOTON
-
-flex-wrap: wrap
-min-width:
-.estilo-imagen-sub {
-    width:100%;
-    min-width: 290px;
-    display: flex;
-
-}
-
-## Diseño
-
-Los diseños se crearon con los siguientes anchos:
-
-- Mobile: 375px
-
-- Desktop: 1440px
-
-minwid
-*/
