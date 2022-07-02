@@ -7,6 +7,7 @@
 * {
   font-family: "Be Vietnam Pro", sans-serif;
   box-sizing: border-box;
+  /*border: red solid 1px;*/
 }
 
 /* VARIABLE DE COLORES */
@@ -28,7 +29,13 @@
   display: none;
 }
 
-/* 1ª IMAGEN DE FONDO */
+/* SACAR CARROUSEL DE MAIN 3ª SECCION */
+
+.carrousel i {
+  display: none;
+}
+
+/* BODY 1ª IMAGEN DE FONDO */
 
 body {
   background-image: url("../img/bg-tablet-pattern.svg");
@@ -36,7 +43,7 @@ body {
   background-position: 62.5rem -12.5rem;
 }
 
-/* 2ª IMAGEN DE FONDO */
+/* MAIN 2ª IMAGEN DE FONDO */
 
 main {
   background-image: url("../img/bg-tablet-pattern.svg");
@@ -60,7 +67,7 @@ header {
   height: 1.5rem;
 }
 
-/* HEADER LISTADO FLEX DECORACION ALINEACION */
+/* HEADER LISTADO FLEX DECORACION ALINEACION Y PSEUDO */
 
 nav ul {
   display: flex;
@@ -81,7 +88,7 @@ nav ul li a:active {
   color: var(--azulGrisáceoOscuro);
 }
 
-/* VARIOS BOTONES COLOR DIENSION BORDE COLOR DE LETRA SIN BORDE Y SOMBRA */
+/* VARIOS BOTONES COLOR DIENSION BORDE COLOR DE LETRA SIN BORDE SOMBRA Y PSEUDO*/
 
 .botonnaranja {
   background-color: var(--rojoBrillante);
@@ -99,7 +106,7 @@ nav ul li a:active {
   cursor: pointer;
 }
 
-/* 1ª SECCION FLEX Y MARGEN */
+/* MAIN 1ª SECCION CAJON FLEX Y MARGEN */
 
 .home {
   display: flex;
@@ -107,7 +114,7 @@ nav ul li a:active {
   margin: 5.69rem 9.12rem 5.69rem 10.31rem;
 }
 
-/* TITULO 1ª SECCION 1ª ARTICULO COLOR Y DISEÑO DE LETRA */
+/* MAIN 1ª SECCION 1ª ARTICULO TITULO COLOR Y DISEÑO DE LETRA */
 
 h1 {
   font-weight: 700;
@@ -117,7 +124,7 @@ h1 {
   color: var(--azulOscuro);
 }
 
-/* PARRAFO 1ª SECCION 1ª ARTICULO COLOR Y DISEÑO DE LETRA Y MEDIDA DE CAJON */
+/* MAIN 1ª SECCION 1ª ARTICULO PARRAFO COLOR Y DISEÑO DE LETRA Y MEDIDA DE CAJON */
 
 .home p {
   font-weight: 500;
@@ -128,7 +135,7 @@ h1 {
   width: 23.12rem;
 }
 
-/* CAJON 2ª SECCION FLEX Y MARGENES */
+/* MAIN 2ª SECCION CAJON FLEX Y MARGENES */
 
 .nosotros {
   display: flex;
@@ -136,7 +143,7 @@ h1 {
   margin: 5.69rem 9.12rem 5.69rem 10.31rem;
 }
 
-/* TITULO 2ª SECCION 1ª ARTICULO COLOR Y DISEÑO DE LETRA */
+/*MAIN 2ª SECCION 1ª ARTICULO TITULO COLOR Y DISEÑO DE LETRA */
 
 .frasenosotros h2 {
   font-weight: 700;
@@ -144,20 +151,20 @@ h1 {
   color: var(--azulOscuro);
 }
 
-/* PARRAFO 2ª SECCION 1ª ARTICULO COLOR Y DISEÑO DE LETRA  Y MARGEN */
+/* MAIN 2ª SECCION 1ª ARTICULO PARRAFO COLOR Y DISEÑO DE LETRA Y MARGEN */
 
 .frasenosotros p {
   color: var(--azulGrisáceoOscuro);
   margin-right: 10em;
 }
 
-/* CAJA 2ª SECCION 2ª ARTICULO MARGEN*/
+/* MAIN 2ª SECCION 2ª ARTICULO CAJON MARGEN*/
 
 .ventajasnosotros {
   margin-left: 12rem;
 }
 
-/* CAJA 2ª SECCION 2ª ARTICULO PARA BOTON Y TITULO FLEX Y GAP */
+/* MAIN  2ª SECCION 2ª ARTICULO CAJA PARA BOTON Y TITULO FLEX Y GAP */
 
 .cajaventajabotonytitulo {
   display: flex;
@@ -165,7 +172,7 @@ h1 {
   gap: 1.5rem;
 }
 
-/* SPAN 2ª SECCION 2ª ARTICULO COLOR DISEÑO REDONDEO COLOR DE LETRA Y DISEÑO DE NUMERO */
+/* MAIN 2ª SECCION 2ª ARTICULO SPAN-BOTON COLOR DISEÑO REDONDEO COLOR DE LETRA Y DISEÑO DE NUMERO */
 
 .botonnaranjita {
   background-color: var(--rojoBrillante);
@@ -177,39 +184,40 @@ h1 {
   text-align: center;
 }
 
-/* TITULO 2ª SECCION 2ª ARTICULO  COLOR LETRA*/
+/* MAIN 2ª SECCION 2ª ARTICULO TITULO COLOR LETRA*/
 
 .cajaventajabotonytitulo h3 {
   color: var(--azulOscuro);
 }
 
-/* PARRAFO 2ª SECCION 2ª ARTICULO ALINEACION Y COLOR DE LETRA*/
+/* MAIN 2ª SECCION 2ª ARTICULO PARRAFO ALINEACION Y COLOR DE LETRA*/
 
 .cajaventajaparrafo {
   padding-left: 6em;
   color: var(--azulGrisáceoOscuro);
 }
 
-/* CAJON 3ª SECCION MARGENES */
+/* MAIN 3ª SECCION CAJON MARGENES */
 
 .testimonios {
   margin: 5.69rem 0rem 5.69rem 0rem;
 }
 
-/* TITULO 3ª SECCION ALINEADO Y COLOR LETRA*/
+/* MAIN 3ª SECCION TITULO ALINEADO Y TAMAÑO Y COLOR DE LETRA */
 .testimonios h2 {
   text-align: center;
   margin-bottom: 8rem;
   color: var(--azulOscuro);
+  font-size: 2.25rem;
 }
 
-/* CAJA 3ª SECCION DE LAS 3 CARTAS FLEX */
+/* MAIN 3ª SECCION CAJA DE LAS 3 CARTAS FLEX */
 
 .testimonios div {
   display: flex;
 }
 
-/* ARTICULO CARTA 3ª SECCION  FLEX COLUM ALINEADO Y COLOR DE FONDO*/
+/* MAIN 3ª SECCION ARTICULOS-CARTA FLEX COLUM ALINEADO Y COLOR DE FONDO*/
 
 .carta1 {
   display: flex;
@@ -217,6 +225,7 @@ h1 {
   align-items: center;
   text-align: center;
   background-color: #fafafa;
+  padding: 0px 1rem;
 }
 
 .carta {
@@ -225,9 +234,10 @@ h1 {
   align-items: center;
   text-align: center;
   background-color: #fafafa;
+  padding: 0px 1rem;
 }
 
-/* FOTO 3ª SECCION DISEÑADA Y POSICIONADA */
+/* MAIN 3ª SECCION FOTO DISEÑADA Y POSICIONADA */
 
 .cartaimg {
   width: 4.37rem;
@@ -236,19 +246,19 @@ h1 {
   top: -2.18rem;
 }
 
-/* TITULO 3º SECCION CARTA COLOR LETRA*/
+/* MAIN 3º SECCION DE CARTAS TITULO DE CARTAS COLOR LETRA*/
 
 .testimonios h3 {
   color: var(--azulOscuro);
 }
 
-/* PARRAFO 3ª SECCION CARTA COLOR LETRA*/
+/* MAIN 3ª SECCION DE CARTA PARRAFO COLOR LETRA*/
 
 .testimonios p {
-  color: var(--azulOscuro);
+  color: var(--azulGrisáceoOscuro);
 }
 
-/* BOTON 3ª SECCION CENTRADO*/
+/* MAIN 3ª SECCION BOTON FLEX Y CENTRADO*/
 
 .centrado {
   display: flex;
@@ -256,7 +266,7 @@ h1 {
   padding-top: 5rem;
 }
 
-/* SECCION 4ª SECCION COLOR FONDO FLEX*/
+/* MAIN 4ª SECCION COLOR IMAGEN DE FONDO Y FLEX*/
 
 .naranja {
   background-image: url("../img/bg-simplify-section-desktop.svg");
@@ -266,9 +276,10 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 15.43rem;
 }
 
-/* TITULO 4ª SECCION DISEÑO Y COLOR DE LETRA MARGEN Y DISEÑO*/
+/* MAIN 4ª SECCION TITULO DISEÑO Y COLOR DE LETRA MARGEN Y DISEÑO*/
 
 .naranja h2 {
   font-weight: 700;
@@ -278,7 +289,7 @@ h1 {
   width: 30rem;
 }
 
-/* BOTON 4ª SECCION COLOR SOMBRA Y DISEÑO*/
+/* MAIN 4ª SECCION BOTON COLOR SOMBRA DISEÑO Y PSEUDO*/
 
 .botonblanco {
   background-color: #ffffff;
@@ -297,7 +308,7 @@ h1 {
   cursor: pointer;
 }
 
-/* CAJON FOOTER FLEX PADDING COLOR DE FONDO Y DISEÑO*/
+/* FOOTER CAJON FLEX PADDING COLOR DE FONDO Y DISEÑO*/
 
 footer {
   display: flex;
@@ -308,13 +319,15 @@ footer {
   height: 15.43rem;
 }
 
-/* CAJA FOOTER FLEX COLUMNAS */
+/* FOOTER CAJA FLEX COLUMNAS */
 
 .footerbox1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* FOOTER LISTADO COLOR TAMAÑO DE LETRA Y PSEUDO*/
 
 .redes a {
   color: var(--varianteGrisClaro);
@@ -325,28 +338,31 @@ footer {
   color: var(--rojoBrillante);
 }
 
-/* LISTA FOOTER SACAR ESTILO*/
+/* FOOTER LISTA SACAR ESTILO*/
 
 footer ul {
   list-style: none;
+  margin: 0px;
 }
 
-/* LISTA FOOTER MARGENES*/
+/* FOOTER LISTA MARGENES DISEÑAR*/
 
 footer li {
-  padding: 0.3rem;
+  padding: 0rem 0rem 1rem 0rem;
+
 }
 
-/* ELEMENTO LISTA FOOTER SIN DECORACION COLOR Y DISEÑO DE LETRA*/
+/* FOOTER ELEMENTO LISTA SIN DECORACION CON COLOR Y DISEÑO DE LETRA*/
 
 footer ul li a {
   text-decoration: none;
   color: var(--varianteGrisClaro);
   font-weight: 400;
   font-size: 1em;
+
 }
 
-/* INPUT FOOTER CREAR BOTON CON COLOR SIN BORDE*/
+/* FOOTER INPUT CREAR BOTON CON COLOR SIN BORDE Y PSEUDO*/
 
 input[type="submit"] {
   background-color: var(--rojoBrillante);
@@ -363,7 +379,7 @@ input[type="submit"]:active {
   cursor: pointer;
 }
 
-/* INPUT FOOTER MAIL REDONDEADO*/
+/* FOOTER INPUT MAIL REDONDEADO*/
 
 input[type="email"] {
   border-radius: 1.875rem;
@@ -371,7 +387,7 @@ input[type="email"] {
   padding: 0.6rem;
 }
 
-/* REDES FOOTER FLEX Y PADDING */
+/* FOOTER REDES FLEX PADDING Y PSEUDO*/
 
 .redes {
   display: flex;
@@ -384,7 +400,7 @@ footer ul li a:active {
   color: var(--rojoBrillante);
 }
 
-/* COPYRIGHT COLOR Y PADDING*/
+/* FOOTER COPYRIGHT COLOR Y PADDING*/
 
 .copy {
   color: var(--azulGrisáceoOscuro);
@@ -396,6 +412,8 @@ footer ul li a:active {
 @media (max-width: 450px) {
 
   /*IMAGEN DE FONDO*/
+
+
 
 
   body {
@@ -413,7 +431,7 @@ footer ul li a:active {
 
   /* HEADER ARREGLAR MARGENES */
   header {
-    margin: 2rem 0rem 3rem 3rem;
+    margin: 2rem 1.5rem 4rem 1.5rem;
 
   }
 
@@ -428,7 +446,7 @@ footer ul li a:active {
 
   /*HEADER DESAPARECER LISTADO*/
 
-  .boxnavbar li {
+  .boxnavbar nav {
     display: none;
   }
 
@@ -441,7 +459,7 @@ footer ul li a:active {
   /*HEADER FLEX */
 
   .boxnavbar {
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
     align-items: center;
   }
@@ -514,14 +532,14 @@ footer ul li a:active {
 
   .ventajasnosotros h3 {
     font-size: 1rem;
-    
+
   }
 
   /*MAIN 2ª SECCION FRANJA ROSADA*/
-  .cajaventajabotonytitulo{
-    background-color: rgba(242, 95, 58,0.2);
+  .cajaventajabotonytitulo {
+    background-color: rgba(242, 95, 58, 0.2);
     height: 8vh;
-}
+  }
 
   /* MAIN 2 SECCION PARRAFO DISEÑAR Y LETRA*/
 
@@ -555,6 +573,37 @@ footer ul li a:active {
     margin-bottom: 6.5rem;
   }
 
+  .centrado {
+    padding-top: 7rem;
+  }
+
+  .carta1 {
+    letter-spacing: 0.03rem;
+    line-height: 1.5rem;
+  }
+
+  /*MAIN 3ª SECCION MOSTRAR CARROUSEL*/
+
+  .carrousel i {
+    display: initial;
+    font-size: 0.5rem;
+  }
+
+  /*MAIN 3 SECCION CARROUSEL FLEX COLOR Y DISEÑAR*/
+  .testimonios div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--rojoBrillante);
+    gap: 3rem 0.3rem;
+
+  }
+
+  /*MAIN 3 SECCION BOTON DISEÑAR*/
+  .centrado {
+    padding-top: 3rem;
+  }
 
   /*MAIN 4ª SECCION  DIMENSIONAR CAJA Y FLEX COLUMN*/
 
@@ -563,6 +612,7 @@ footer ul li a:active {
     justify-content: center;
     height: 25rem;
     margin-top: 3.5rem;
+    background-position: -26rem -3rem;
   }
 
   /* MAIN 4ª SECCION TITULO DIMENSIONAR Y ALINEAR*/
@@ -593,8 +643,8 @@ footer ul li a:active {
   /*FOOTER MAIL ALINEAR Y FLEX*/
   .formulariofooter form {
     display: flex;
-    justify-content: space-between;
-    margin: -4rem 4rem 0rem 3.5rem;
+    /*justify-content: space-between;*/
+    /*margin: -4rem 4rem 0rem 3.5rem;*/
     position: relative;
     top: 7rem;
   }
@@ -604,44 +654,73 @@ footer ul li a:active {
   .logofooter {
     text-align: center;
     position: relative;
-    top: 1rem;
+    top: 2rem;
   }
 
   /* FOOTER REDES ALINEAR FLEX*/
   .redes {
     justify-content: space-around;
     position: relative;
-    bottom: 11rem;
+    bottom: 10rem;
+    margin: 0rem 1rem;
   }
 
   /*FOOTER AGRANDAR ICONOS*/
 
   .redes a {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   /*FOOTER COPYRIGHT ALINEAR Y CENTRAR*/
   .copy {
     text-align: center;
     position: relative;
-    top: 26rem;
+    top: 24rem;
+    font-size: 0.8rem;
   }
 
   /*FOOTER 1ºLISTADO ALINEAR */
 
-  .primerlistado{
+  .primerlistado {
     position: relative;
-    bottom: 6rem;
+    bottom: 5rem;
+    left: 1.2rem;
   }
 
   /*FOOTER 2ºLISTADO ALINEAR */
 
-  .segundolistado{
+  .segundolistado {
     position: relative;
-    bottom: -2.5rem;
-    left: 10rem;
+    bottom: -1.8rem;
+    left: 11.2rem;
     width: 11rem;
   }
+
+  /*FOOTER MAIL ALARGAR*/
+
+  input[type="email"] {
+    width: 15rem;
+  }
+
+  /*FOOTER MAIL BOTON ALARGAR*/
+
+  input[type="submit"] {
+    width: 4.7rem;
+  }
+
+  /*FOOTER MAIL MARGEN JUSTIFY Y DIAGRAMAR */
+
+  .formulariofooter form {
+    margin: 0rem;
+    justify-content: center;
+    top: 4rem;
+    gap: 0.5rem;
+  }
+
+
+
+
+
 
 
 }
